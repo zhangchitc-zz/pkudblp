@@ -1,0 +1,331 @@
+AI
+
+aaai		1	National Conference on Artificial Intelligence (AAAI)				
+cvpr		1	Computer Vision and Pattern Recognition						
+iccv		1	IEEE International Conference on Computer Vision (ICCV)				
+icml		1	International Conference on Machine Learning (ICML)			
+ijcai		1	International Joint Conference on Artificial Intelligence (IJCAI)
+colt		2	Computational Learning Theory (COLT)
+nips		2	Neural Information Processing Systems (NIPS)
+acl		2	Meeting of the Association for Computational Linguistics (ACL)
+emnlp		2	Empirical Methods in Natural Language Processing
+ecai		2	European Conference on Artificial Intelligence (ECAI)
+eccv		2	European Conference on Computer Vision (ECCV)
+ecml		2	European Conference on Machine Learning (ECML)
+icra		2	International Conference on Robotics and Automation (ICRA)
+alt		2	Algorithmic Learning Theory (ALT)
+aips		2	International Conference on Automated Planning and Scheduling (ICAPS) / Conference on Artificial Intelligence Planning Systems (AIPS)
+iccbr		2	Case-Based Reasoning and Development (ICCBR)
+coling		2	International Conference on Computational Linguistics (COLING)
+icip		2	International Conference on Image Processing
+ilp		2	International Workshop on Inductive Logic Programming (ILP)
+kr		2	Principles of Knowledge Representation and Reasoning (KR)
+uai		2	Uncertainty in Artificial Intelligence
+ftp		2	First Order Theorem Proving (FTP)
+aamas		2	Adaptive Agents and Multi-Agents Systems (AAMAS)
+accv		3	Asian Conference on Computer Vision (ACCV)
+gecco		3	Genetic and Evolutionary Computation Conference (GECCO)
+cec		3	IEEE Congress on Evolutionary Computation
+icassp		3	International Conference on Acoustics, Speech, and Signal Processing, ICASSP
+fuzzIEEE	3	IEEE International Conference on Fuzzy Systems
+ictai		3	International Conference on Tools with Artificial Intelligence (ICTAI)
+icann		3	Int. Conference on Artificial Neural Networks
+fgr		3	IEEE International Conference on Automatic Face and Gesture Recognition
+civr		3	Conference on Image and Video Retrieval
+dis		3	Discovery Science
+icdar		3	International Conference on Document Analysis and Recognition (ICDAR)
+ksem		3	Knowledge Science, Engineering and Management
+iconip		3	International Conference on Neural Information Processing
+icpr		3	International Conference on Pattern Recognition (ICPR)
+cosit		3	Conference On Spatial Information Theory (COSIT)
+icb		3	International Conference on Biometrics
+ijcnlp		3	International Joint Conference on Natural Language Processing
+ijcnn		3	IJCNN
+pricai		3	Pacific Rim International Conference on Artificial Intelligence (PRICAI)
+naacl		3	North American Chapter of the Association for Computational Linguistics
+
+
+
+
+System
+
+asplos		1	International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)
+hcpa		1	International Symposium on High-Performance Computer Architecture (HPCA)
+isca		1	International Symposium on Computer Architecture (ISCA)
+micro		1	International Symposium on Microarchitecture (MICRO)
+spaa		2	ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)
+asap		2	Application-Specific Systems, Architectures, and Processors
+cluster		2	Cluster Computing
+cgo		2	Symposium on Code Generation and Optimization
+fast		2	USENIX Conference on File and Storage Technologies
+lctrts		2	Languages, Compilers, and Tools for Embedded Systems (LCTES) / Languages, Compilers, & Tools for Real-Time Systems (LCT-RTS)
+dac		2	Design Automation Conference (DAC)
+date		2	Design, Automation, and Test in Europe
+europar		2	European Conference on Parallel Processing (Euro-Par)
+eurosys		2	EuroSys
+hpdc		2	International Symposium on High Performance Distributed Computing (HPDC)
+mascots		2	Modeling, Analysis, and Simulation On Computer and Telecommunication Systems (MASCOTS)
+sc		2	Supercomputing (SC)
+cases		2	International Conference on Compilers, Architecture, and Synthesis for Embedded Systems (CASES)
+iccad		2	International Conference on Computer Aided Design (ICCAD)
+iccd		2	International Conference on Computer Design (ICCD)
+icdcs		2	International Conference on Distributed Computing Systems (ICDCS)
+codes		2	International Conference on Hardware Software Codesign
+sigmetrics	2	ACM SIGMETRICS Conference on Measurement and Modeling of Computer Systems
+icpp		2	International Conference on Parallel Processing (ICPP)
+ics		2	International Conference on Supercomputing (ICS)
+ipps		2	International Parallel (and Distributed) Processing Symposium (IP(D)PS)
+fpga		2	Symposium on Field Programmable Gate Arrays (FPGA)
+mss		2	IEEE Symposium on Mass Storage Systems
+pact		2	Parallel Computing Technologies (PaCT)
+ppopp		2	ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming (PPOPP)
+rtss		2	IEEE Real-Time Systems Symposium (RTSS)
+usenix		2	USENIX Technical Conference
+vee		2	International Conference on Virtual Execution Environments
+appt		3	Advanced Parallel Programming Technologies
+ancs		3	Architecture for Networking and Communications Systems
+ccgrid		3	IEEE/ACM International Symposium on Cluster Computing and the Grid (CCGRID)
+fccm		3	Field-Programmable Custom Computing Machines (FCCM)
+fpl		3	Field-Programmable Logic and Applications (FPL)
+hpcc		3	High Performance Computing and Communications
+nas		3	IEEE NAS - Networking, Architecture, and Storage
+ispa		3	International Symposium on Parallel and Distributed Processing and Applications
+npc		3	Network and Parallel Computing
+emsoft		3	International Conference / Workshop on Embedded Software (EMSOFT)
+fpt		3	IEEE International Conference on Field-Programmable Technology (FPT)
+grid		3	Grid Computing
+hipeac		3	High Performance Embedded Architectures and Compilers
+hipc		3	High Performance Computing (HiPC)
+pdcat		3	Parallel and Distributed Computing: Applications and Technologies
+icpads		3	International Conference on Parallel and Distributed Systems (ICPADS)
+iscas		3	IEEE International Symposium on Circuits and Systems (ISCAS)
+rtas		3	IEEE Real Time Technology and Applications Symposium
+hoti		3	IEEE Hot Interconnects
+hotos		3	Workshop on Hot Topics in Operating Systems (HotOS)
+
+
+
+
+Networks
+
+mobicom		1	ACM/IEEE International Conference on Mobile Computing and Networking (MOBICOM)
+sigcomm		1	ACM SIGCOMM Conference
+infocom		1	IEEE INFOCOM
+nsdi		1	Networked Systems Design and Implementation
+sensys		2	ACM SenSys
+conext		2	Conference on Emerging Network Experiment and Technology
+secon		2	Sensor and Ad Hoc Communications and Networks
+networking	2	Networking
+icnp		2	International Conference on Network Protocols
+percom		2	IEEE International Conference on Pervasive Computing and Communications
+imc		2	Internet Measurement Conference
+mobihoc		2	Mobile Ad Hoc Networking and Computing
+iwqos		2	International Workshop on Quality of Service (IWQoS)
+forte		3	Formal Techniques for Networked and Distributed Systems / Formal Description Techniques for Distributed Systems and Communication Protocols (FORTE)
+lcn		3	IEEE Conference on Local Computer Networks (LCN)
+globecom	3	IEEE GLOBECOM
+icc		3	IEEE International Conference on Communications (ICC)
+icccn		3	International Conference on Computer Communications and Networks
+p2p		3	IEEE International Conference on Peer-to-Peer Computing
+ipccc		3	IEEE International Performance, Computing, and Communications Conference (IPCCC)
+wowmom		3	International Symposium on a World of Wireless, Mobile and Multimedia Networks (WOWMOM)
+iscc		3	International Symposium on Computers and Communications
+wcnc		3	IEEE Wireless Communications & Networking Conference
+npc		3	Network and Parallel Computing
+im		3	Integrated Network Management
+ipsn		3	Information Processing in Sensor Networks
+mswim		3	International Workshop on Modeling Analysis and Simulation of Wireless and Mobile Systems
+nossdav		3	International Workshop on Network and Operating System Support for Digital Audio and Video (NOSSDAV)
+noms		3	IEEE/IFIP Network Operations and Management Symposium
+hotnets		3	Hot Topics in Networks
+
+
+
+
+Security
+
+ccs		1	Conference on Computer and Communications Security (CCS)
+sp		1	IEEE Symposium on Security and Privacy (S&P)
+crypto		1	International Cryptology Conference (CRYPTO)
+acsac		2	Annual Computer Security Applications Conference
+asiacrypt	2	ASIACRYPT
+eurocrypt	2	EUROCRYPT
+esorics		2	European Symposium on Research in Computer Security (ESORICS)
+csfw		2	IEEE Computer Security Foundations Symposium / Workshop (CSF/CSFW)
+raid		2	Recent Advances in Intrusion Detection (RAID)
+ndss		2	Network and Distributed System Security Symposium (NDSS)
+dsn		2	Dependable Systems and Networks
+tcc		2	Theory of Cryptography
+uss		2	USENIX Security Symposium
+ih		2	Information Hiding
+wisec		3	Wireless Network Security
+mmsec		3	Multimedia & Security
+sacmat		3	ACM Symposium on Access Control Models and Technologies (SACMAT)
+sac		3	ACM Symposium on Applied Computing (SAC)
+asiaccs(ccs)	3	ACM Symposium on Information, Computer and Communications Security
+drm		3	ACM Digital Rights Management Workshop
+worm		3	Workshop on Rapid Malcode
+sasn		3	Workshop on Security of ad hoc and Sensor Networks
+wise		3	Web Information Systems Engineering (WISE)
+acns		3	Applied Cryptography and Network Security
+acisp		3	Australasian Conference on Information Security and Privacy (ACISP)
+dfrws		3	Digital Forensic Research Workshop
+fse		3	Fast Software Encryption (FSE)
+fc		3	Financial Cryptography
+dimva		3	Detection of Intrusions and Malware & Vulnerability Assessment
+iwia		3	IEEE International Workshop on Information Assurance
+iaw		3	IEEE Information Assurance Workshop
+sec		3	Information Security
+ifip11-9	3	IFIP WG11.9 Publications - Digital Forensics
+isw		3	Information Security Conference / Workshop (ISC/ISW)
+icics		3	International Conference on Information and Communication Security (ICICS)
+securecomm	3	Security and Privacy in Communication Networks
+pkc		3	Public Key Cryptography (PKC)
+nspw		3	Workshop on New Security Paradigms (NSPW)
+ctrsa		3	The Cryptographer's Track at RSA Conference (CT-RSA)
+soups		3	Symposium On Usable Privacy and Security
+ches		3	Cryptographic Hardware and Embedded Systems (CHES)
+
+
+Theory
+stoc		1	Symposium on the Theory of Computing (STOC)
+focs		1	Annual Symposium on Foundations of Computer Science (FOCS)
+lics		1	Logic in Computer Science (LICS)
+soda		2	Symposium on Discrete Algorithms (SODA)
+compgeom	2	Symposium on Computational Geometry
+spaa		2	ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)
+coco		2	Conference on Computational Complexity / Structure in Complexity Theory Conference (CoCo)
+icalp		2	International Colloquium on Automata, Languages and Programming (ICALP)
+cav		2	Computer Aided Verification (CAV)
+concur		2	International Conference on Concurrency Theory (CONCUR)
+csl		3	Conference for Computer Science Logic (CSL)
+fsttcs		3	Foundations of Software Technology and Theoretical Computer Science (FSTTCS)
+mfcs		3	Mathematical Foundations of Computer Science (MFCS)
+rta		3	Rewriting Techniques and Applications (RTA)
+stacs		3	Symposium on Theoretical Aspects of Computer Science (STACS)
+
+
+
+Software Engineering
+
+sigsoft		1	Foundations of Software Engineering (SIGSOFT FSE)
+popl		1	Symposium on Principles of Programming Languages (POPL)
+pldi		1	SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+sosp		1	Symposium on Operating Systems Principles (SOSP)
+icse		1	International Conference on Software Engineering (ICSE)
+oopsla		1	Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)
+osdi		1	Operating Systems Design and Implementation (OSDI)
+pepm		2	Symposium/Workshop on Partial Evaluation and Semantic-Based Program Manipulation (PEPM)
+ecoop		2	European Conference on Object-Oriented Programming (ECOOP)
+esec		2	European Software Engineering Conference (ESEC)
+fm		2	Formal Methods (FM)
+re		2	Requirements Engineering
+lics		2	Logic in Computer Science (LICS)
+compsac		2	International Computer Software and Applications Conference (COMPSAC)
+kbse		2	Automated Software Engineering (ASE)
+cc		2	Compiler Construction (CC)
+coling		2	International Conference on Computational Linguistics (COLING)
+concur		2	International Conference on Concurrency Theory (CONCUR)
+models		2	Model Driven Engineering Languages and Systems
+icsm		2	IEEE International Conference on Software Maintenance
+icsr		2	International Conference on Software Reuse (ICSR)
+icfp		2	ACM SIGPLAN International Conference on Functional Programming (ICFP)
+sas		2	Static Analysis (WSA/SAS)
+issta		2	International Symposium on Software Testing and Analysis (ISSTA)
+paste		3	Workshop on Program Analysis For Software Tools and Engineering (PASTE)
+apsec		3	Asia-Pacific Software Engineering Conference
+cav		3	Computer Aided Verification (CAV)
+esop		3	European Symposium on Programming (ESOP)
+iceccs		3	International Conference on Engineering of Complex Computer Systems
+scam		3	Source Code Analysis and Manipulation
+caise		3	Conference on Advanced Information Systems Engineering (CAiSE)
+emsoft		3	International Conference / Workshop on Embedded Software (EMSOFT)
+icfem		3	International Conference on Formal Engineering Methods
+fossacs		3	Foundations of Software Science and Computation Structure (FoSSaCS)
+tools		3	Technology of Object-Oriented Languages and Systems
+cp		3	Principles and Practice of Constraint Programming (CP)
+qsic		3	International Conference on Quality Software
+rta		3	Rewriting Techniques and Applications (RTA)
+seke		3	Software Engineering and Knowledge Engineering (SEKE)
+tacas		3	Tools and Algorithms for Construction and Analysis of Systems (TACAS)
+spin		3	SPIN
+lopstr		3	International Workshop on Logic Program Synthesis and Transformation (LOPSTR)
+fates		3	International Workshop on Formal Approaches to Testing of Software
+iwssd		3	International Workshop on Software Specification and Design (IWSSD)
+icst		3	International Conference on Software Testing, Verification, and Validation
+
+
+
+
+Database & Information
+
+sigmod		1	ACM SIGMOD Conference
+kdd		1	Knowledge Discovery and Data Mining (KDD)
+pods		1	Symposium on Principles of Database Systems (PODS)
+icde		1	International Conference on Data Engineering (ICDE)
+sigir		1	International Conference on Research and Development in Information Retrieval (SIGIR)
+vldb		1	Very Large Data Bases (VLDB) Conference
+cikm		2	International Conference on Information and Knowledge Management (CIKM)
+wsdm		2	Web Search and Data Mining
+dasfaa		2	Database Systems for Advanced Applications (DASFAA)
+pkdd		2	European Conference on Principles of Data Mining and Knowledge Discovery (PKDD)
+icdm		2	IEEE International Conference on Data Mining (ICDM)
+er		2	International Conference on Conceptual Modeling (ER)
+icdt		2	International Conference on Database Theory (ICDT)
+edbt		2	International Conference on Extending Database Technology (EDBT)
+cidr		2	Conference on Innovative Data Systems Research (CIDR)
+www		2	International World Wide Web Conferences (WWW)
+pakdd		2	Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)
+sdm		2	SIAM International Conference on Data Mining
+nldb		3	Applications of Natural Language to Data Bases (NLDB)
+dexa		3	Database and Expert Systems Applications (DEXA)
+ecir		3	European Conference on IR Research (ECIR)
+webdb		3	International Workshop on the Web and Databases (WebDB)
+mdm		3	Mobile Data Management (MDM)
+ssdbm		3	Statistical and Scientific Database Management (SSDBM)
+waim		3	International Conference on Web-Age Information Management (WAIM)
+ssd		3	Symposium on Spatial and Temporal Databases (SSTD) / Symposium on Large Spatial Databases (SSD)
+mobide		3	ACM International Workshop on Data Engineering for Wireless and Mobile Access (MobiDE)
+apweb		3	Asia-Pacific Web Conference
+wise		3	Web Information Systems Engineering (WISE)
+
+
+
+Graphics
+
+mm		1	ACM Multimedia
+siggraph	1	Annual Conference on Computer Graphics (SIGGRAPH)
+chi		1	Computer Human Interaction (CHI)
+visualization	1	Visualization
+sca		2	Symposium on Computer Animation
+si3d		2	Symposium on Interactive 3D Graphics (SI3D)
+uist		2	Symposium on User Interface Software and Technology (UIST)
+sgp		2	Symposium on Geometry Processing
+rt		2	Eurographics Symposium on Rendering Techniques
+vissym		2	EuroVis / Joint Eurographics - IEEE TCVG Symposium on Visualization
+icmi		2	Int. Conf. on Multimodal Interfaces (ICMI)
+pg		2	Pacific Conference on Computer Graphics and Applications
+ca		3	Computer Animation Conference (CA)
+cgi		3	Computer Graphics International
+gmp		3	Geometric Modeling and Processing
+graphicsinterface	3	Graphics Interface
+icmcs		3	International Conference on Multimedia and Expo (ICME) / International Conference on Multimedia Computing and Systems (ICMCS)
+smi		3	Shape Modeling International
+ismar		3	International Symposium on Mixed and Augmented Reality
+apvis		3	Asia Pacific Symposium on Information Visualisation
+pcm		3	Pacific Rim Conference on Multimedia
+spbg		3	Symposium on Point Based Graphics
+gd		3	Symposium on Graph Drawing (GD)
+
+
+
+Joint
+
+ismb		2	Intelligent Systems in Molecular Biology
+recomb		2	Research in Computational Molecular Biology (RECOMB)
+apbc		3	Asia-Pacific Bioinformatics Conference
+
+
+
+
+
