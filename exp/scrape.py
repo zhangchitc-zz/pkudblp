@@ -74,16 +74,17 @@ class PaperFetcher:
 
         title = divmain.xpath ("div/h1/strong")[0].text
         
+        # UPDATE: NO NEED FOR ABSTRACT
         # use regex to extract abstract link
-        abst_url = re.compile (r"tab.abstract.cfm[^']*").search (resp_body).group (0)
-        abst_url = 'http://dl.acm.org/' + abst_url
-        abst_body = self.op.open (abst_url).read ()
+        #abst_url = re.compile (r"tab.abstract.cfm[^']*").search (resp_body).group (0)
+        #abst_url = 'http://dl.acm.org/' + abst_url
+        #abst_body = self.op.open (abst_url).read ()
         
         # extract all text node from this dom tree
-        abst = ''.join (sp.fromstring (abst_body).xpath ('//div/p/div/p/descendant-or-self::*/text()'))
+        #abst = ''.join (sp.fromstring (abst_body).xpath ('//div/p/div/p/descendant-or-self::*/text()'))
         
         # instantiate a Paper class
-        paper = Paper (title, abst)
+        paper = Paper (title)
 
         # locate the author table block
         author_table = divmain.xpath ("table/tr/td/table")[1]
@@ -134,17 +135,17 @@ class PaperFetcher:
         root = sp.fromstring (resp_body)
 
         title = root.xpath ("//span[@id='ctl00_MainContent_PaperItem_title']")[0].text
-        abst = root.xpath ("//span[@id='ctl00_MainContent_PaperItem_snippet']")[0].text
+        #abst = root.xpath ("//span[@id='ctl00_MainContent_PaperItem_snippet']")[0].text
 
         # instantiate a Paper class
-        paper = Paper (title, abst)
+        paper = Paper (title)
 
         # locate the div block for the paper description
         paper_div = root.xpath ("//div[@id='ctl00_MainContent_PaperItem_divPaper']/div")[1]
        
         for author_url in paper_div.xpath ("a[@class='author-name-tooltip']/@href"):
             # print author_url
-            paper.add_author (self.get_author_from_ms (author_url))
+            paper.add_author (self.__get_author_from_ms (author_url))
 
         return paper
 
@@ -164,6 +165,14 @@ class PaperFetcher:
 
         return Author (name, affn)
 
+    
+    def get_paper_from_ms (self, title, authors):
+        entry_url = self.__get_paperentry_from_ms (title, authors)
+        if entry_url:
+            return self.__get_paper_from_ms (entry_url)
+        else:
+            return None
+
 
     def test_private_getpe_acm (self):
         title =  'Promotion Analysis in multi-dimensional space'
@@ -178,8 +187,9 @@ class PaperFetcher:
 
     
     def test_getp_acm (self):
-        authors = 'Jonathan J. Hoch Adi Shamir'
-        title = 'On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak'
+        #authors = 'Jonathan J. Hoch Adi Shamir'
+        #title = 'On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak'
+        title = 'Secure Location Verification Using Radio Broadcast'
         print self.get_paper_from_acm (title, authors)
 
 
@@ -202,8 +212,9 @@ class PaperFetcher:
 
 if __name__ == '__main__':
     pf = PaperFetcher ()
+    pf.test_private_getpe_thu ()
     #pf.test_getpe_acm ()
-    pf.test_getp_acm ()
+    #pf.test_getp_acm ()
     #pf.test_getp_ms ()
     #pf.test_getp_ms ()
     #pf.test_geta_ms ()

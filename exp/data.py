@@ -6,9 +6,8 @@ __author__ = "zhangchitc@gmail.com"
 
 class Paper:
 
-    def __init__ (self, title, abst):
+    def __init__ (self, title):
         self.title = title
-        self.abst = abst
         self.authors = []
 
     def add_author (self, author):
@@ -35,5 +34,5 @@ class Author:
 
 
 if __name__ == '__main__':
-    print Paper ('abc', 'def')
+    print Paper ('abc')
     print Author ('abc', 'def')
