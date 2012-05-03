@@ -8,7 +8,7 @@ f.close ()
 r = etree.fromstring (s)
 
 count = 0
-start = 172
+start = 280
 
 pf = PaperFetcher ()
 
