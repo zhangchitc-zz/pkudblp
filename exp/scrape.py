@@ -1,4 +1,6 @@
-import urllib2, re
+#! coding=utf-8
+
+import urllib2, urllib, re
 import lxml.html.soupparser as sp
 
 from mechanize import Browser
@@ -9,16 +11,27 @@ class PaperFetcher:
     """
     TODO
     """
+   
+    def __wrapper (self, url):
+        path = urllib.quote(url, safe="")
+        return "http://pkudblp.appspot.com/route?url=%s" % path
+    
     
     def __init__ (self):
         # set up mechanize Browser
         self.br = Browser ()
+
+        # enable proxy?
+        enable_proxy = True
 
         # set up parameters of the browser
         self.br.set_handle_equiv (True)
         self.br.set_handle_redirect (True)
         self.br.set_handle_referer (True)
         self.br.set_handle_robots (False)
+
+        if enable_proxy:
+           self.br.set_proxies({"http": "http://localhost:8087" }) 
 
         # disguise as firefox browser
         self.br.addheaders = [
@@ -27,8 +40,13 @@ class PaperFetcher:
                   ("Accept-Language", "en-us,en;q=0.5"), 
                   ("Accept-Charset", "gb18030,utf-8;q=0.7,*;q=0.7")]
 
+        proxy_handler = urllib2.ProxyHandler ({'http' : 'http://localhost:8087'})
+
         # set up urllib2 opener
-        self.op = urllib2.build_opener ()
+        if enable_proxy:
+            self.op = urllib2.build_opener (proxy_handler)
+        else:
+            self.op = urllib2.build_opener ()
 
         # disguise as firefox browser
         self.op.addheaders = [
@@ -41,7 +59,7 @@ class PaperFetcher:
     def __get_paperentry_from_acm (self, title, authors):
         QUERY_URL = 'http://dl.acm.org/advsearch.cfm'
 
-        self.br.open (QUERY_URL)
+        self.br.open (self.__wrapper (QUERY_URL))
         
         # this query form does not have id attribute, nr=0 means the first form
         self.br.select_form (nr=0)
@@ -67,7 +85,7 @@ class PaperFetcher:
 
 
     def __get_paper_from_acm (self, entry_url):
-        resp_body = self.op.open (entry_url).read ()
+        resp_body = self.op.open (self.__wrapper (entry_url)).read ()
         root = sp.fromstring (resp_body)
 
         divmain = root.xpath ("//div[@id='divmain']")[0]
@@ -88,17 +106,56 @@ class PaperFetcher:
 
         # locate the author table block
         author_table = divmain.xpath ("table/tr/td/table")[1]
-        
+
         # add each author
         for author_row in author_table.xpath ('tr'):
             name = author_row.xpath ('td/a/text()')[0]
-            affn = author_row.xpath ('td/a/small/text()')[0]
+            
+            # if the text is in tag <a>, then it has a link to this affiliation
+            if len (author_row.xpath ('td/a/small/text()')) > 0:
+                affn = author_row.xpath ('td/a/small/text()')[0]
+            elif len (author_row.xpath ('td/small/text()')) > 0:
+                affn = author_row.xpath ('td/small/text()')[0]
+            else:
+                affn = ""
+
             paper.add_author (Author (name, affn))
 
         return paper
 
     
+    def __preprocess_query (self, title, authors):
+        title = title.replace (':', ' ').replace ('-', ' ')
+        authors = authors.replace (':', ' ').replace ('-', ' ')
+
+        # preprocess the title and authors
+        a_forbid = re.compile ('[\W\d]')
+
+        # strip all non-english character names from authors
+        new_authors = ""
+        for entity in authors.split (' '):
+            if not a_forbid.search (entity):
+                new_authors = new_authors + " " + entity
+
+        # assuming title does not contain non-alphanumeric
+        t_forbid = re.compile ('\W')
+
+        title = title.rstrip ('.')
+        new_title = ""
+        for entity in title.split (' '):
+            if not t_forbid.search (entity):
+                new_title = new_title + " " + entity
+        
+        title = new_title
+        authors = new_authors
+        #print "new param: Title (%s)  authors (%s)" % (title, authors)
+ 
+        return (title, authors)
+
+
     def get_paper_from_acm (self, title, authors):
+        (title, authors) = self.__preprocess_query (title, authors)       
+        
         entry_url = self.__get_paperentry_from_acm (title, authors)
         if entry_url:
             return self.__get_paper_from_acm (entry_url)
@@ -189,7 +246,10 @@ class PaperFetcher:
     def test_getp_acm (self):
         #authors = 'Jonathan J. Hoch Adi Shamir'
         #title = 'On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak'
-        title = 'Secure Location Verification Using Radio Broadcast'
+        #authors = 'Adnan Vora Mikhail Nesterenko'
+        #title = 'Secure Location Verification Using Radio Broadcast.'
+        authors = 'Henrique Moniz Nuno Ferreira Neves Miguel Correia Paulo Veríssimo'
+        title = 'RITAS: Services for Randomized Intrusion Tolerance.'
         print self.get_paper_from_acm (title, authors)
 
 
@@ -212,9 +272,8 @@ class PaperFetcher:
 
 if __name__ == '__main__':
     pf = PaperFetcher ()
-    pf.test_private_getpe_thu ()
     #pf.test_getpe_acm ()
-    #pf.test_getp_acm ()
+    pf.test_getp_acm ()
     #pf.test_getp_ms ()
     #pf.test_getp_ms ()
     #pf.test_geta_ms ()

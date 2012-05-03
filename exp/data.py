@@ -19,7 +19,7 @@ class Paper:
         for author in self.authors:
             ret += "     %s\n" % author
         ret += "\n\n"
-        return ret
+        return unicode (ret).encode ('utf-8')
 
 
 class Author:
@@ -30,7 +30,7 @@ class Author:
 
     def __str__ (self):
         ret = "%s (%s)" % (self.name, self.affn)
-        return unicode (ret).encode ('utf-8')
+        return ret
 
 
 if __name__ == '__main__':
