@@ -1,0 +1,66 @@
+csur		1	ACM Computing Surveys
+tocs		1	ACM Transactions on Computer Systems (TOCS)
+tods		1	ACM Transactions on Database Systems (TODS)
+tog		1	ACM Transactions on Graphics (TOG)
+tois		1	ACM Transactions on Information Systems (TOIS)
+toplas		1	ACM Transactions on Programming Languages and Systems (TOPLAS)
+tosem		1	ACM Transactions on Software Engineering and Methodology (TOSEM)
+tomccap		1	ACM Transactions on Multimedia Computing, Communications, and Applications (TOMCCAP)
+ai		1	Artificial Intelligence
+cacm		1	Communications of the ACM (CACM)
+coling		1	Computational Linguistics
+computer	1	IEEE Computer
+ton		1	IEEE/ACM Transactions on Networking (TON)
+ieeemm		1	IEEE MultiMedia
+tcsv		1	IEEE Transactions on Circuits and Systems for Video Technology
+tc		1	IEEE Transactions on Computers
+tec		1	IEEE Transactions on Evolutionary Computation
+tkde		1	IEEE Transactions on Knowledge and Data Engineering
+tmc		1	IEEE Transactions on Mobile Computing (TMC)
+tmm		1	IEEE Transactions on Multimedia (TMM)
+tnn		1	IEEE Transactions on Neural Networks and Learning Systems
+tpds		1	IEEE Transactions on Parallel and Distributed Systems (TPDS)
+tpami		1	IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+tse		1	IEEE Transactions on Software Engineering (TSE)
+tvcg		1	IEEE Transactions on Visualization and Computer Graphics
+ijcv		1	International Journal of Computer Vision
+joc		1	Journal of Cryptology
+jmlr		1	Journal of Machine Learning Research
+jacm		1	Journal of the ACM
+ml		1	Machine Learning
+pr		1	Pattern Recognition
+pieee		1	Proceedings of the IEEE
+vldb		1	The VLDB Journal
+taco		1	ACM Transactions on Architecture and Code Optimization (TACO)
+tocs		1	ACM Transactions on Computer Systems (TOCS)
+tc		1	IEEE Transactions on Computers
+tpds		1	IEEE Transactions on Parallel and Distributed Systems (TPDS)
+ton		1	IEEE/ACM Transactions on Networking (TON)
+jsac		1	IEEE Journal of Selected Areas in Communications
+tmc		1	IEEE Transactions on Mobile Computing (TMC)
+tissec		1	ACM Transactions on Information and System Security (TISSEC)
+tdsc		1	IEEE Transactions on Dependable and Secure Computing
+tifs		1	IEEE Transactions on Information Forensics and Security
+joc		1	Journal of Cryptology
+jacm		1	Journal of the ACM
+siamcomp	1	SIAM Journal on Computing
+taco		1	ACM Transactions on Architecture and Code Optimization (TACO)
+tosem		1	ACM Transactions on Software Engineering and Methodology (TOSEM)
+tse		1	IEEE Transactions on Software Engineering (TSE)
+tods		1	ACM Transactions on Database Systems (TODS)
+tois		1	ACM Transactions on Information Systems (TOIS)
+tkdd		1	ACM Transactions on Knowledge Discovery from Data (TKDD)
+tkde		1	IEEE Transactions on Knowledge and Data Engineering
+vldb		1	The VLDB Journal
+tog		1	ACM Transactions on Graphics (TOG)
+tochi		1	ACM Transactions on Computer-Human Interaction (TOCHI)
+tip		1	IEEE Transactions on Image Processing
+tvcg		1	IEEE Transactions on Visualization and Computer Graphics
+ai		1	Artificial Intelligence
+tpami		1	IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+ijcv		1	International Journal of Computer Vision
+jmlr		1	Journal of Machine Learning Research
+jacm		1	Journal of the ACM
+pieee		1	Proceedings of the IEEE
+
+

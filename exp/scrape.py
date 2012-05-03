@@ -38,7 +38,7 @@ class PaperFetcher:
                   ("Accept-Charset", "gb18030,utf-8;q=0.7,*;q=0.7")]
 
 
-    def get_paperentry_from_acm (self, title, authors):
+    def __get_paperentry_from_acm (self, title, authors):
         QUERY_URL = 'http://dl.acm.org/advsearch.cfm'
 
         self.br.open (QUERY_URL)
@@ -66,7 +66,7 @@ class PaperFetcher:
             return ""
 
 
-    def get_paper_from_acm (self, entry_url):
+    def __get_paper_from_acm (self, entry_url):
         resp_body = self.op.open (entry_url).read ()
         root = sp.fromstring (resp_body)
 
@@ -96,9 +96,16 @@ class PaperFetcher:
 
         return paper
 
-       
+    
+    def get_paper_from_acm (self, title, authors):
+        entry_url = self.__get_paperentry_from_acm (title, authors)
+        if entry_url:
+            return self.__get_paper_from_acm (entry_url)
+        else:
+            return None
 
-    def get_paperentry_from_ms (self, title, authors):
+
+    def __get_paperentry_from_ms (self, title, authors):
         QUERY_URL = 'http://academic.research.microsoft.com/'
     
         self.br.open (QUERY_URL)
@@ -108,7 +115,7 @@ class PaperFetcher:
         
         # construct query according to their query language
         self.br.form['ctl00$SearchHeader$SearchForm$txtQuery'] = \
-            'author:(' + authors + ') ' + title
+            'author:(' + authors + ') ' + '"' + title + '"'
         resp_body = self.br.submit ().read ()
 
         # if search result is not empty
@@ -122,7 +129,7 @@ class PaperFetcher:
             return ""
 
     
-    def get_paper_from_ms (self, entry_url):
+    def __get_paper_from_ms (self, entry_url):
         resp_body = self.op.open (entry_url).read ()
         root = sp.fromstring (resp_body)
 
@@ -142,7 +149,7 @@ class PaperFetcher:
         return paper
 
 
-    def get_author_from_ms (self, entry_url):
+    def __get_author_from_ms (self, entry_url):
         resp_body = self.op.open (entry_url).read ()
         root = sp.fromstring (resp_body)
 
@@ -158,33 +165,39 @@ class PaperFetcher:
         return Author (name, affn)
 
 
-    def test_getpe_acm (self):
+    def test_private_getpe_acm (self):
         title =  'Promotion Analysis in multi-dimensional space'
         authors = 'Tianyi Wu, Dong Xin, Qiaozhu Mei, Jiawei Han'
-        print self.get_paperentry_from_acm (title, authors)
+        print self.__get_paperentry_from_acm (title, authors)
+
+    
+    def test_private_getp_acm (self):
+        url = 'http://dl.acm.org/citation.cfm?' + \
+            'id=1687627.1687641&coll=DL&dl=GUIDE&CFID=99867254&CFTOKEN=89989886'
+        print self.__get_paper_from_acm (url)
 
     
     def test_getp_acm (self):
-        url = 'http://dl.acm.org/citation.cfm?' + \
-            'id=1687627.1687641&coll=DL&dl=GUIDE&CFID=99867254&CFTOKEN=89989886'
-        print self.get_paper_from_acm (url)
+        authors = 'Jonathan J. Hoch Adi Shamir'
+        title = 'On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak'
+        print self.get_paper_from_acm (title, authors)
 
 
-    def test_getpe_ms (self):
+    def test_private_getpe_ms (self):
         authors = 'Zhenjie Zhang Beng Chi Ooi'
         title = 'Similarity Search on Bregman Divergence: Towards Non-Metric Indexing'
-        print self.get_paperentry_from_ms (title, authors)
+        print self.__get_paperentry_from_ms (title, authors)
 
 
-    def test_getp_ms (self):
+    def test_private_getp_ms (self):
         url = 'http://academic.research.microsoft.com/Publication/2181095/' + \
         'comparing-gene-expression-networks-in-a-multi-dimensional-space-to-extract-similarities-and'
-        print self.get_paper_from_ms (url)
+        print self.__get_paper_from_ms (url)
 
 
-    def test_geta_ms (self):
+    def test_private_geta_ms (self):
         url = 'http://academic.research.microsoft.com/Author/3501073/zhenjie-zhang'
-        print self.get_author_from_ms (url)
+        print self.__get_author_from_ms (url)
 
 
 if __name__ == '__main__':

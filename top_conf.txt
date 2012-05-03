@@ -1,0 +1,73 @@
+aaai		1	National Conference on Artificial Intelligence (AAAI)				
+cvpr		1	Computer Vision and Pattern Recognition						
+iccv		1	IEEE International Conference on Computer Vision (ICCV)				
+icml		1	International Conference on Machine Learning (ICML)			
+ijcai		1	International Joint Conference on Artificial Intelligence (IJCAI)
+asplos		1	International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)
+hcpa		1	International Symposium on High-Performance Computer Architecture (HPCA)
+isca		1	International Symposium on Computer Architecture (ISCA)
+micro		1	International Symposium on Microarchitecture (MICRO)
+mobicom		1	ACM/IEEE International Conference on Mobile Computing and Networking (MOBICOM)
+sigcomm		1	ACM SIGCOMM Conference
+infocom		1	IEEE INFOCOM
+nsdi		1	Networked Systems Design and Implementation
+ccs		1	Conference on Computer and Communications Security (CCS)
+sp		1	IEEE Symposium on Security and Privacy (S&P)
+crypto		1	International Cryptology Conference (CRYPTO)
+stoc		1	Symposium on the Theory of Computing (STOC)
+focs		1	Annual Symposium on Foundations of Computer Science (FOCS)
+lics		1	Logic in Computer Science (LICS)
+sigsoft		1	Foundations of Software Engineering (SIGSOFT FSE)
+popl		1	Symposium on Principles of Programming Languages (POPL)
+pldi		1	SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+sosp		1	Symposium on Operating Systems Principles (SOSP)
+icse		1	International Conference on Software Engineering (ICSE)
+oopsla		1	Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)
+osdi		1	Operating Systems Design and Implementation (OSDI)
+sigmod		1	ACM SIGMOD Conference
+kdd		1	Knowledge Discovery and Data Mining (KDD)
+pods		1	Symposium on Principles of Database Systems (PODS)
+icde		1	International Conference on Data Engineering (ICDE)
+sigir		1	International Conference on Research and Development in Information Retrieval (SIGIR)
+vldb		1	Very Large Data Bases (VLDB) Conference
+mm		1	ACM Multimedia
+siggraph	1	Annual Conference on Computer Graphics (SIGGRAPH)
+chi		1	Computer Human Interaction (CHI)
+visualization	1	Visualization
+aaai		1	National Conference on Artificial Intelligence (AAAI)				
+sigmod		1	ACM SIGMOD Conference
+chi		1	Computer Human Interaction (CHI)
+siggraph	1	Annual Conference on Computer Graphics (SIGGRAPH)
+mm		1	ACM Multimedia
+sigcomm		1	ACM SIGCOMM Conference
+kdd		1	Knowledge Discovery and Data Mining (KDD)
+sigsoft		1	Foundations of Software Engineering (SIGSOFT FSE)
+sosp		1	Symposium on Operating Systems Principles (SOSP)
+stoc		1	Symposium on the Theory of Computing (STOC)
+ccs		1	Conference on Computer and Communications Security (CCS)
+nips		1	Neural Information Processing Systems (NIPS)
+acl		1	Meeting of the Association for Computational Linguistics (ACL)
+emnlp		1	Empirical Methods in Natural Language Processing
+focs		1	Annual Symposium on Foundations of Computer Science (FOCS)
+cvpr		1	Computer Vision and Pattern Recognition						
+icde		1	International Conference on Data Engineering (ICDE)
+sp		1	IEEE Symposium on Security and Privacy (S&P)
+lics		1	Logic in Computer Science (LICS)
+isca		1	International Symposium on Computer Architecture (ISCA)
+micro		1	International Symposium on Microarchitecture (MICRO)
+kbse		1	Automated Software Engineering (ASE)
+coling		1	International Conference on Computational Linguistics (COLING)
+iccv		1	IEEE International Conference on Computer Vision (ICCV)				
+icml		1	International Conference on Machine Learning (ICML)			
+icse		1	International Conference on Software Engineering (ICSE)
+vldb		1	Very Large Data Bases (VLDB) Conference
+crypto		1	International Cryptology Conference (CRYPTO)
+ijcai		1	International Joint Conference on Artificial Intelligence (IJCAI)
+oopsla		1	Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)
+popl		1	Symposium on Principles of Programming Languages (POPL)
+pldi		1	SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+osdi		1	Operating Systems Design and Implementation (OSDI)
+
+
+
+
