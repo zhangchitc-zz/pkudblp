@@ -1,0 +1,10 @@
+step1:
+    filter out those irrelevant poster, demo, blabla papers
+
+step2:
+    filter out those paper with no authors, trimmed the author with additional information extracted from MS academic search
+
+step3:
+    extract only title, author, year, url info
+
+
