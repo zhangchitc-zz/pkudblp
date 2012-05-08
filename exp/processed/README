@@ -7,4 +7,5 @@ step2:
 step3:
     extract only title, author, year, url info
 
-
+step4:
+    normalized the affiliation for each author

@@ -1,7 +1,7 @@
 from lxml import etree
 import re
 
-f = open ('result2.xml', 'r')
+f = open ('result3.xml', 'r')
 xml = f.read ()
 f.close ()
 
@@ -17,9 +17,6 @@ affns = {}
 key = []
 
 for article in root.xpath ('*'):
-    if len (article.xpath ('author/text ()')) == 0:
-        c = c + 1
-        continue
     
     p = re.compile (r'(?P<name>.*)\((?P<affn>.*)\)')
     rauthors = article.xpath ('rauthor')
@@ -38,7 +35,15 @@ for article in root.xpath ('*'):
     #print etree.tostring (article, pretty_print = True)
 
 key.sort ()
+
+pairs = []
+
 for i in key:
-    print i, ' ', affns[i]
+    pairs.append ((-affns[i], i))
+
+pairs.sort ()
+
+for freq, affn in pairs:
+    print affn + '\t' + str (-freq)
 
 #print "</dblp>"
