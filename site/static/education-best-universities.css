@@ -1,0 +1,290 @@
+.worlds_best_u body {
+	font: normal normal normal 62.5%/1.7 'Lucida Grande', Verdana, Helvetica, Arial, sans-serif;
+}
+
+.worlds_best_u #header form#search input#search-text { width: 125px; }
+.worlds_best_u #header form#search { 
+	height: 42px;
+	position: absolute;
+	right: -66px;
+	top: 66px;
+	width: 240px;
+}
+
+.worlds_best_u .nav { *margin-left: -67px; }
+.worlds_best_u #header .nav ul li.selected a { color: #E6A000; }
+
+.worlds_best_u #worlds-best-universities h1 {
+	font-size: 2.5em;
+	padding-bottom: 5px;
+	color: #ec311e;
+	max-width: 500px;
+	line-height: 120%;
+}
+
+.worlds_best_u h1 { 
+	color: #e8a036; 
+	margin-bottom: 10px;
+	font-size: 26px; 
+}
+
+.worlds_best_u #intro-text {
+	background: url(http://www.usnews.com/dbimages/master/23536/wbu_badge.jpg) 480px 40px no-repeat;
+}
+
+.worlds_best_u #intro-text p { width: 460px; }
+
+body.majors-subjects p { color: #444; }
+
+body.majors-subjects .subjects h2 { 
+	padding: 20px 0 20px 60px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.hr {
+	border-top: 1px dashed #CCC;
+	padding-bottom: 15px;
+	clear: both;
+}
+
+body.majors-subjects .subjects h2#arts { background: url(http://www.usnews.com/dbimages/master/23531/wbu_icon_art.jpg) center left no-repeat; }
+body.majors-subjects .subjects h2#life { background: url(http://www.usnews.com/dbimages/master/23532/wbu_icons_biomeds.jpg) center left no-repeat; }
+body.majors-subjects .subjects h2#it { background: url(http://www.usnews.com/dbimages/master/23533/wbu_icons_it.jpg) center left no-repeat; }
+body.majors-subjects .subjects h2#natural { background: url(http://www.usnews.com/dbimages/master/23534/wbu_icons_natural.jpg) center left no-repeat; }
+body.majors-subjects .subjects h2#social { background: url(http://www.usnews.com/dbimages/master/23535/wbu_icons_social.jpg) center left no-repeat; }
+body.majors-subjects .subjects h2#arts { background: url(http://www.usnews.com/dbimages/master/23531/wbu_icon_art.jpg) center left no-repeat; }
+
+body.majors-subjects .subjects ul { 
+	float: left;
+	padding: 0; 
+	margin: 0 30px 20px 0;
+	width: 170px; 
+}
+
+body.majors-subjects .subjects ul .last { margin-right: 0; }
+
+body.majors-subjects .subjects li {
+	list-style: none; 
+	margin: 0;
+	padding: 0 0 10px 0;
+	line-height: 140%;
+}
+
+.worlds_best_u #worlds-best-universities p {
+	width: 75%;
+}
+
+.worlds_best_u li {
+	font-size: 1.3em;
+	color: #222;
+}
+
+.worlds_best_u dl a { font-size: 13px; }
+
+.worlds_best_u #rail dl { font-size: 1em; }
+
+.worlds_best_u #worlds-best-universities {
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 15px 15px 21px 15px;
+	width: 615px;
+	border: 1px solid #DDD;
+	border-radius: 8px;
+	background: #fffcf4 url(http://www.usnews.com/dbimages/master/23552/wbu_2011_badge.png) 475px 40px no-repeat;
+}
+
+.worlds_best_u .article #worlds-best-universities { width: 588px; }
+
+.worlds_best_u #usnews-subscription {
+	width: 32%;
+	float: right;
+}
+
+.worlds_best_u img#btn_signup { margin: 10px 0 0 -4px; }
+
+.worlds_best_u #filter-worlds-best {
+	margin-top: 15px;
+}
+
+.worlds_best_u #filter-worlds-best p {
+	padding-bottom: 5px;
+}
+
+.worlds_best_u select.select_skin {
+	border: 1px solid #e4e4e4;
+	font-weight: normal;
+	height: 25px;
+}
+
+.worlds_best_u .select_skin {
+	font-size: 13px;
+	min-width: 400px;
+}
+
+.worlds_best_u .cmf-skinned-text {
+	font-size: 13px;
+	color: #777;
+	padding-top: 1px;
+}
+
+.worlds_best_u #content { overflow: hidden; }
+.worlds_best_u #content .article { margin-bottom: 0; }
+.worlds_best_u #rail { margin-top: 0px; }
+
+/* Table Styles */
+
+.worlds_best_u table {
+	width: 100%;
+	margin: 0 0 15px 0;
+	overflow: hidden;
+	float: left;
+}
+
+.worlds_best_u td.row-first { background-color: #f5f5f5; }
+.worlds_best_u td.row-even { background-color: #f9f9f9; }
+.worlds_best_u td.row-odd { background-color: #f3f3f3; }
+.worlds_best_u #foobar #greeting { float: none; font-size: 1em; }
+
+.worlds_best_u th, .worlds_best_u td {
+	line-height: 170%;
+	border: 2px solid white;
+}
+
+.worlds_best_u th {
+	background-color: #E7E7E7;
+	padding: 5px 10px;
+	font-weight: bold;
+	vertical-align: text-top;
+	text-align: center;
+}
+
+.worlds_best_u .university-name, .worlds_best_u .rank-column { text-align: left; }
+
+.worlds_best_u td {
+	padding: 5px;
+	background-color: #EEE;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.worlds_best_u table.subject-reset td { 
+	background: none; 
+	font-size: 1em;
+	text-align: left;
+	padding: 5px 0;
+}
+
+.worlds_best_u table.subject-reset td { vertical-align: top; }
+.worlds_best_u table.subject-reset td.first { padding-right: 110px; max-width: 150px; }
+.worlds_best_u table.subject-reset td#history { padding-right: 0px; }
+.worlds_best_u table.subject-reset td#philosphy { padding-right: 0px; }
+.worlds_best_u table.subject-reset td#cs { padding-right: 0px; }
+.worlds_best_u table.subject-reset td#psych { padding-right: 300px; }
+.worlds_best_u table.subject-reset td.no-padding { padding-right: 0px; }
+.worlds_best_u table.subject-reset td.af { padding-right: 70px; }
+.worlds_best_u table.subject-reset td.middle { padding-right: 0px; }
+.worlds_best_u table.subject-reset td.ee { padding-left: 20px; }
+.worlds_best_u table.subject-reset td.so { padding-left: 20px; }
+.worlds_best_u table.subject-reset td.pis { padding-left: 20px; }
+
+.worlds_best_u .school-column { text-align: left; }
+
+.worlds_best_u td div p {
+	font-size: 1.3em;
+    text-decoration: none;
+    color: #0072B2;
+}
+
+
+.worlds_best_u #pagination {
+	margin: 0 0 15px 0;
+	clear: both;
+}
+
+.worlds_best_u a.pager_link, .pager_curpage { 
+	padding: 3px 5px; 
+	border: 1px solid #DDD;  
+	margin-right: 0px;
+	font-weight: bold;
+}
+	
+.worlds_best_u .pager_curpage { background-color: #CCC; }
+
+.worlds_best_u td.column-first {
+	text-align: center;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+.worlds_best_u td.column-first span {
+	padding: 3px 10px;
+	background-color: #f7c61a;
+	border-radius: 5px;
+	color: white;
+}
+
+.worlds_best_u td.overall-score, 
+.worlds_best_u td.overall-asia-score, 
+.worlds_best_u td.overall-latin-america-score, 
+.worlds_best_u td.overall-subject-score {
+	font-weight: bold;
+}
+
+/* FG-Menu */
+.worlds_best_u .fg-menu { margin: 10px 0; }
+
+.worlds_best_u .fg-menu .label {
+	font-size: 1.3em;
+}
+
+.worlds_best_u .fg-menu .current {
+	display: none;
+}
+
+.worlds_best_u .fg-menu .current-js {
+	background-image: url(/static/images/ah/input-background-button.png);
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	border: 1px solid #ddd;
+	display: inline-block;
+	font-size: 1.3em;
+	height: 23px;
+	text-align: left;
+	text-indent: 5px;
+	width: 380px;
+	margin-top: 5px;
+	color: #777;
+}
+
+.worlds_best_u .fg-menu p a { display: block; margin-top: 5px; font-size: .9em; }
+
+.worlds_best_u .fg-menu ul {
+	display: inline;
+}
+
+.worlds_best_u .fg-menu ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+.worlds_best_u .fg-menu-container {
+	background: #fff;
+	border: 1px solid #444;
+	font-size: 1em;
+	position: relative;
+	top: 23px;
+	z-index: 1;
+}
+
+.worlds_best_u .fg-menu-container a {
+	color: #222;
+	display: block;
+	text-indent: 5px;
+}
+
+.worlds_best_u .fg-menu-container a:hover {
+	background: #444;
+	color: #fff;
+	text-decoration: none;
+}
