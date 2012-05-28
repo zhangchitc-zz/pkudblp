@@ -1,0 +1,196 @@
+http://www.informatik.uni-trier.de/~ley/db/conf/sp/sp2009.html	1	405												
+http://www.informatik.uni-trier.de/~ley/db/conf/sp/sp2011.html	1	553												
+http://www.informatik.uni-trier.de/~ley/db/conf/sp/sp2007.html	1	364												
+http://www.informatik.uni-trier.de/~ley/db/conf/sp/sp2006.html	1	400												
+http://www.informatik.uni-trier.de/~ley/db/conf/sp/sp2008.html	1	431												
+http://www.informatik.uni-trier.de/~ley/db/conf/sp/sp2010.html	1	528												
+http://www.informatik.uni-trier.de/~ley/db/conf/pldi/pldi2010.html	1	496												
+http://www.informatik.uni-trier.de/~ley/db/conf/pldi/pldi2006.html	1	426												
+http://www.informatik.uni-trier.de/~ley/db/conf/pldi/pldi2008.html	1	382												
+http://www.informatik.uni-trier.de/~ley/db/conf/pldi/pldi2009.html	1	478												
+http://www.informatik.uni-trier.de/~ley/db/conf/pldi/pldi2007.html	1	491												
+http://www.informatik.uni-trier.de/~ley/db/conf/pldi/pldi2011.html	1	652												
+http://www.informatik.uni-trier.de/~ley/db/conf/isca/isca2008.html	1	464												
+http://www.informatik.uni-trier.de/~ley/db/conf/isca/isca2010.html	2	233	235	347	350	508								
+http://www.informatik.uni-trier.de/~ley/db/conf/isca/isca2009.html	2	495												
+http://www.informatik.uni-trier.de/~ley/db/conf/isca/isca2007.html	1	527												
+http://www.informatik.uni-trier.de/~ley/db/conf/isca/isca2011.html	1	472												
+http://www.informatik.uni-trier.de/~ley/db/conf/isca/isca2006.html	4	127	130	351	354	390								
+http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai2009.html	27	2106												
+http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai2007.html	2	2941												
+http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai2011.html	3	2782												
+http://www.informatik.uni-trier.de/~ley/db/conf/nsdi/nsdi2008.html	1	437												
+http://www.informatik.uni-trier.de/~ley/db/conf/nsdi/nsdi2009.html	1	480												
+http://www.informatik.uni-trier.de/~ley/db/conf/nsdi/nsdi2010.html	1	448												
+http://www.informatik.uni-trier.de/~ley/db/conf/osdi/osdi2010.html	1	464												
+http://www.informatik.uni-trier.de/~ley/db/conf/osdi/osdi2006.html	1	396												
+http://www.informatik.uni-trier.de/~ley/db/conf/osdi/osdi2008.html	1	384												
+http://www.informatik.uni-trier.de/~ley/db/conf/acl/acl2010.html	1	1592												
+http://www.informatik.uni-trier.de/~ley/db/conf/acl/acl2009.html	1	1083												
+http://www.informatik.uni-trier.de/~ley/db/conf/acl/acl2011.html	1	1644												
+http://www.informatik.uni-trier.de/~ley/db/conf/acl/acl2008.html	1	1056												
+http://www.informatik.uni-trier.de/~ley/db/conf/kbse/ase2006.html	15	252												
+http://www.informatik.uni-trier.de/~ley/db/conf/kbse/ase2007.html	4	372												
+http://www.informatik.uni-trier.de/~ley/db/conf/kbse/ase2009.html	1	491												
+http://www.informatik.uni-trier.de/~ley/db/conf/kbse/ase2008.html	1	534												
+http://www.informatik.uni-trier.de/~ley/db/conf/kbse/ase2011.html	3	371												
+http://www.informatik.uni-trier.de/~ley/db/conf/kbse/ase2010.html	3	122	167	284	367	486								
+http://www.informatik.uni-trier.de/~ley/db/conf/sosp/sosp2009.html	1	334												
+http://www.informatik.uni-trier.de/~ley/db/conf/sosp/sosp2011.html	1	416												
+http://www.informatik.uni-trier.de/~ley/db/conf/sosp/sosp2007.html	1	366												
+http://www.informatik.uni-trier.de/~ley/db/conf/mobicom/mobicom2010.html	1	388												
+http://www.informatik.uni-trier.de/~ley/db/conf/mobicom/mobicom2006.html	2	413												
+http://www.informatik.uni-trier.de/~ley/db/conf/mobicom/mobicom2011.html	1	348												
+http://www.informatik.uni-trier.de/~ley/db/conf/mobicom/mobicom2008.html	2	362												
+http://www.informatik.uni-trier.de/~ley/db/conf/mobicom/mobicom2009.html	1	356												
+http://www.informatik.uni-trier.de/~ley/db/conf/mobicom/mobicom2007.html	3	301												
+http://www.informatik.uni-trier.de/~ley/db/conf/asplos/asplos2009.html	1	348												
+http://www.informatik.uni-trier.de/~ley/db/conf/asplos/asplos2011.html	3	418												
+http://www.informatik.uni-trier.de/~ley/db/conf/asplos/asplos2012.html	1	462												
+http://www.informatik.uni-trier.de/~ley/db/conf/asplos/asplos2008.html	2	339												
+http://www.informatik.uni-trier.de/~ley/db/conf/asplos/asplos2010.html	3	408												
+http://www.informatik.uni-trier.de/~ley/db/conf/asplos/asplos2006.html	2	425												
+http://www.informatik.uni-trier.de/~ley/db/conf/icde/icde2006.html	1	89												
+http://www.informatik.uni-trier.de/~ley/db/conf/icde/icde2008.html	10	1189												
+http://www.informatik.uni-trier.de/~ley/db/conf/icde/icde2007.html	26	1135												
+http://www.informatik.uni-trier.de/~ley/db/conf/icde/icde2010.html	4	995												
+http://www.informatik.uni-trier.de/~ley/db/conf/icde/icde2011.html	15	1186												
+http://www.informatik.uni-trier.de/~ley/db/conf/icde/icde2009.html	6	1131												
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2007.html	3	134	137	262	265	388								
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2012.html	7	214	217	424	427	584								
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2011.html	3	240	247	472	475	636								
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2008.html	3	144	147	284	287	434								
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2009.html	2	151	153	300	302	453								
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2006.html	2	268	270	333	346	421								
+http://www.informatik.uni-trier.de/~ley/db/conf/popl/popl2010.html	7	156	159	508										
+http://www.informatik.uni-trier.de/~ley/db/conf/micro/micro2007.html	3	454												
+http://www.informatik.uni-trier.de/~ley/db/conf/micro/micro2009.html	2	266	268	585										
+http://www.informatik.uni-trier.de/~ley/db/conf/micro/micro2010.html	3	557												
+http://www.informatik.uni-trier.de/~ley/db/conf/micro/micro2008.html	1	470												
+http://www.informatik.uni-trier.de/~ley/db/conf/micro/micro2006.html	3	514												
+http://www.informatik.uni-trier.de/~ley/db/conf/micro/micro2011.html	1	500												
+http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2011.html	1	1622												
+http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2010.html	1	1298												
+http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2009.html	1	1580												
+http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2006.html	1	171	327	414	517	626								
+http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2007.html	1	946	967	1118										
+http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2008.html	1	1099												
+http://www.informatik.uni-trier.de/~ley/db/conf/coling/coling2010.html	1	1387												
+http://www.informatik.uni-trier.de/~ley/db/conf/coling/coling2008.html	1	1160												
+http://www.informatik.uni-trier.de/~ley/db/conf/iccv/iccv2009.html	1	380												
+http://www.informatik.uni-trier.de/~ley/db/conf/iccv/iccv2011.html	1	2666												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigcomm/sigcomm2010.html	3	398												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigcomm/sigcomm2011.html	2	385												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigcomm/sigcomm2006.html	3	446												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigcomm/sigcomm2007.html	1	420												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigcomm/sigcomm2009.html	3	326												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigcomm/sigcomm2008.html	3	438												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod2008.html	15	1042												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod2006.html	1	694												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod2011.html	1	1044												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod2010.html	3	962												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod2009.html	5	840												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod2007.html	31	872												
+http://www.informatik.uni-trier.de/~ley/db/conf/infocom/infocom2007.html	1	2260												
+http://www.informatik.uni-trier.de/~ley/db/conf/infocom/infocom2008.html	1	2493												
+http://www.informatik.uni-trier.de/~ley/db/conf/infocom/infocom2009.html	1	3015												
+http://www.informatik.uni-trier.de/~ley/db/conf/infocom/infocom2010.html	1	2990												
+http://www.informatik.uni-trier.de/~ley/db/conf/infocom/infocom2011.html	1	3244												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2007.html	7	686												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2011.html	5	1082												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2009.html	3	627												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2008.html	3	682												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2010.html	2	698												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2006.html	3	596												
+http://www.informatik.uni-trier.de/~ley/db/vldb2007.html	15	1104												
+http://www.informatik.uni-trier.de/~ley/db/vldb2006.html	19	1012												
+http://www.informatik.uni-trier.de/~ley/db/conf/oopsla/oopsla2011.html	3	1084												
+http://www.informatik.uni-trier.de/~ley/db/conf/oopsla/oopsla2010.html	4	753												
+http://www.informatik.uni-trier.de/~ley/db/conf/oopsla/oopsla2007.html	1	608												
+http://www.informatik.uni-trier.de/~ley/db/conf/oopsla/oopsla2008.html	1	582												
+http://www.informatik.uni-trier.de/~ley/db/conf/oopsla/oopsla2009.html	1	464												
+http://www.informatik.uni-trier.de/~ley/db/conf/oopsla/oopsla2006.html	1	430												
+http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2008.html	1	1263												
+http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2007.html	1	1198												
+http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2006.html	1	1120															
+http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2010.html	3	1262												
+http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2011.html	1	1216												
+http://www.informatik.uni-trier.de/~ley/db/conf/crypto/crypto2008.html	1	591												
+http://www.informatik.uni-trier.de/~ley/db/conf/crypto/crypto2010.html	1	741												
+http://www.informatik.uni-trier.de/~ley/db/conf/crypto/crypto2006.html	1	619												
+http://www.informatik.uni-trier.de/~ley/db/conf/crypto/crypto2011.html	1	779												
+http://www.informatik.uni-trier.de/~ley/db/conf/crypto/crypto2007.html	1	67	92	630										
+http://www.informatik.uni-trier.de/~ley/db/conf/crypto/crypto2009.html	1	689												
+http://www.informatik.uni-trier.de/~ley/db/conf/cvpr/cvpr2010.html	1	3632												
+http://www.informatik.uni-trier.de/~ley/db/conf/cvpr/cvpr2011.html	1	3503												
+http://www.informatik.uni-trier.de/~ley/db/conf/cvpr/cvpr2009.html	1	64	485	532	951	1077	1502	1541	1956	2051	2466	2511	2937	3000
+http://www.informatik.uni-trier.de/~ley/db/conf/cvpr/cvpr2006-1.html	3	78	453	528	895	968	1283	1319						
+http://www.informatik.uni-trier.de/~ley/db/conf/cvpr/cvpr2006-2.html	1323	1354	1719	1792	2137	2212								
+http://www.informatik.uni-trier.de/~ley/db/conf/lics/lics2006.html	7	122	127	242	255	338	349	430						
+http://www.informatik.uni-trier.de/~ley/db/conf/lics/lics2008.html	33	102	105	508										
+http://www.informatik.uni-trier.de/~ley/db/conf/lics/lics2007.html	3	472												
+http://www.informatik.uni-trier.de/~ley/db/conf/lics/lics2010.html	1	109	111	227	243	282	284	313	322	361	382	430		
+http://www.informatik.uni-trier.de/~ley/db/conf/lics/lics2011.html	13	116	123	216	227	328	335	418						
+http://www.informatik.uni-trier.de/~ley/db/conf/lics/lics2009.html	17	438												
+http://www.informatik.uni-trier.de/~ley/db/conf/focs/focs2011.html	17	846												
+http://www.informatik.uni-trier.de/~ley/db/conf/focs/focs2007.html	41	734												
+http://www.informatik.uni-trier.de/~ley/db/conf/focs/focs2006.html	3	748												
+http://www.informatik.uni-trier.de/~ley/db/conf/focs/focs2010.html	3	823												
+http://www.informatik.uni-trier.de/~ley/db/conf/focs/focs2009.html	3	774												
+http://www.informatik.uni-trier.de/~ley/db/conf/focs/focs2008.html	15	832												
+http://www.informatik.uni-trier.de/~ley/db/conf/chi/chi2009.html	1	2376												
+http://www.informatik.uni-trier.de/~ley/db/conf/chi/chi2011.html	1	3478												
+http://www.informatik.uni-trier.de/~ley/db/conf/chi/chi2007.html	1	1600												
+http://www.informatik.uni-trier.de/~ley/db/conf/chi/chi2010.html	1	2634												
+http://www.informatik.uni-trier.de/~ley/db/conf/chi/chi2008.html	1	1826												
+http://www.informatik.uni-trier.de/~ley/db/conf/chi/chi2006.html	1	1321												
+http://www.informatik.uni-trier.de/~ley/db/conf/icse/icse2008.html	1	580												
+http://www.informatik.uni-trier.de/~ley/db/conf/icse/icse2011.html	1	620												
+http://www.informatik.uni-trier.de/~ley/db/conf/icse/icse2010-1.html	5	607												
+http://www.informatik.uni-trier.de/~ley/db/conf/icse/icse2007.html	3	510												
+http://www.informatik.uni-trier.de/~ley/db/conf/icse/icse2006.html	52	411												
+http://www.informatik.uni-trier.de/~ley/db/conf/icse/icse2009.html	1	550												
+http://www.informatik.uni-trier.de/~ley/db/conf/pods/pods2008.html	13	320												
+http://www.informatik.uni-trier.de/~ley/db/conf/pods/pods2011.html	13	304												
+http://www.informatik.uni-trier.de/~ley/db/conf/pods/pods2009.html	13	64	77	174	177	287								
+http://www.informatik.uni-trier.de/~ley/db/conf/pods/pods2006.html	10	109	114	212	225	354	356	365						
+http://www.informatik.uni-trier.de/~ley/db/conf/pods/pods2010.html	3	64	77	158	179	338								
+http://www.informatik.uni-trier.de/~ley/db/conf/pods/pods2007.html	13	312												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigsoft/fse2007.html	5	304												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigsoft/fse2009.html	3	262												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigsoft/fse2011.html	4	375												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigsoft/fse2010.html	7	336												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigsoft/fse2006.html	1	286												
+http://www.informatik.uni-trier.de/~ley/db/conf/sigsoft/fse2008.html	2	237												
+http://www.informatik.uni-trier.de/~ley/db/conf/mm/mm2007.html	17	146	168	256	383	452	585	614	651	746	852	1000		
+http://www.informatik.uni-trier.de/~ley/db/conf/mm/mm2008.html	1	618												
+http://www.informatik.uni-trier.de/~ley/db/conf/mm/mm2006.html	17	44	201	480										
+http://www.informatik.uni-trier.de/~ley/db/conf/mm/mm2009.html	5	500												
+http://www.informatik.uni-trier.de/~ley/db/conf/mm/mm2010.html	5	610												
+http://www.informatik.uni-trier.de/~ley/db/conf/mm/mm2011.html	33	582												
+http://www.informatik.uni-trier.de/~ley/db/conf/stoc/stoc2010.html	1	794												
+http://www.informatik.uni-trier.de/~ley/db/conf/stoc/stoc2006.html	1	766												
+http://www.informatik.uni-trier.de/~ley/db/conf/stoc/stoc2007.html	1	716												
+http://www.informatik.uni-trier.de/~ley/db/conf/stoc/stoc2009.html	3	734												
+http://www.informatik.uni-trier.de/~ley/db/conf/stoc/stoc2008.html	1	54	57	568	579	638	641	796						
+http://www.informatik.uni-trier.de/~ley/db/conf/stoc/stoc2011.html	1	822												
+http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai2006.html	10	1252												
+http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai2008.html	3	1124												
+http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai2007.html	18	1595												
+http://www.informatik.uni-trier.de/~ley/db/conf/ccs/ccs2009.html	1	647												
+http://www.informatik.uni-trier.de/~ley/db/conf/ccs/ccs2011.html	3	360	363	724										
+http://www.informatik.uni-trier.de/~ley/db/conf/ccs/ccs2007.html	2	609												
+http://www.informatik.uni-trier.de/~ley/db/conf/ccs/ccs2010.html	1	629												
+http://www.informatik.uni-trier.de/~ley/db/conf/ccs/ccs2006.html	26	354												
+http://www.informatik.uni-trier.de/~ley/db/conf/ccs/ccs2008.html	3	574												
+http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips2009.html	1	2348												
+http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips2010.html	1	2603												
+http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips2008.html	1	2000												
+http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips2006.html	1	1632												
+http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips2011.html	1	2752												
+http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2009.html	19	1066												
+http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2011.html	6	734												
+http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2010.html	203	1208												
+http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2007.html	6	912												
+http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2008.html	7	856												
+http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2006.html	4	503												

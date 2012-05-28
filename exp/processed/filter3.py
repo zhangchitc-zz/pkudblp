@@ -12,7 +12,10 @@ c = 0
 #urls = f.readlines ()
 #f.close ()
 
+print '<?xml version="1.0" encoding="ISO-8859-1"?>'
+print '<!DOCTYPE dblp SYSTEM "dblp.dtd">'
 print "<dblp>"
+
 
 for article in root.xpath ('*'):
     paper = etree.Element ('paper')
@@ -29,6 +32,9 @@ for article in root.xpath ('*'):
         paper.append (node)
 
     for node in article.xpath ('url'):
+        paper.append (node)
+
+    for node in article.xpath ('pages'):
         paper.append (node)
 
     for node in article.xpath ('qtitle'):

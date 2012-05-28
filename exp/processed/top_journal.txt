@@ -1,0 +1,42 @@
+ai		1	Artificial Intelligence
+cacm		1	Communications of the ACM (CACM)
+coling		1	Computational Linguistics
+computer		1	IEEE Computer
+csur		1	ACM Computing Surveys
+ieeemm		1	IEEE MultiMedia
+ijcv		1	International Journal of Computer Vision
+jacm		1	Journal of the ACM
+jmlr		1	Journal of Machine Learning Research
+joc		1	Journal of Cryptology
+jsac		1	IEEE Journal of Selected Areas in Communications
+ml		1	Machine Learning
+pieee		1	Proceedings of the IEEE
+pr		1	Pattern Recognition
+siamcomp		1	SIAM Journal on Computing
+taco		1	ACM Transactions on Architecture and Code Optimization (TACO)
+tc		1	IEEE Transactions on Computers
+tcsv		1	IEEE Transactions on Circuits and Systems for Video Technology
+tdsc		1	IEEE Transactions on Dependable and Secure Computing
+tec		1	IEEE Transactions on Evolutionary Computation
+tifs		1	IEEE Transactions on Information Forensics and Security
+tip		1	IEEE Transactions on Image Processing
+tissec		1	ACM Transactions on Information and System Security (TISSEC)
+tkde		1	IEEE Transactions on Knowledge and Data Engineering
+tkdd		1	ACM Transactions on Knowledge Discovery from Data (TKDD)
+tmc		1	IEEE Transactions on Mobile Computing (TMC)
+tmm		1	IEEE Transactions on Multimedia (TMM)
+tnn		1	IEEE Transactions on Neural Networks and Learning Systems
+tochi		1	ACM Transactions on Computer-Human Interaction (TOCHI)
+tocs		1	ACM Transactions on Computer Systems (TOCS)
+tods		1	ACM Transactions on Database Systems (TODS)
+tog		1	ACM Transactions on Graphics (TOG)
+tois		1	ACM Transactions on Information Systems (TOIS)
+tomccap		1	ACM Transactions on Multimedia Computing, Communications, and Applications (TOMCCAP)
+ton		1	IEEE/ACM Transactions on Networking (TON)
+toplas		1	ACM Transactions on Programming Languages and Systems (TOPLAS)
+tosem		1	ACM Transactions on Software Engineering and Methodology (TOSEM)
+tpami		1	IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+tpds		1	IEEE Transactions on Parallel and Distributed Systems (TPDS)
+tse		1	IEEE Transactions on Software Engineering (TSE)
+tvcg		1	IEEE Transactions on Visualization and Computer Graphics
+vldb		1	The VLDB Journal

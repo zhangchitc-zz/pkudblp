@@ -68,11 +68,44 @@ with con:
     cur.execute ('DROP TABLE IF EXISTS Copyrights')
     cur.execute ('''CREATE TABLE Copyrights (
         pid     INTEGER,
+        pubtype INTEGER,
+        pubid   INTEGER,
         aid     INTEGER,
         rank    INTEGER,
+        score   REAL, 
         FOREIGN KEY (pid) REFERENCES Papers (pid),
         FOREIGN KEY (aid) REFERENCES Authors (aid)
         )''')
+    
+    cur.execute ('DROP TABLE IF EXISTS Conferences')
+    cur.execute ('''CREATE TABLE Conferences (
+        cid     INTEGER PRIMARY KEY AUTOINCREMENT,
+        abbr    TEXT, 
+        title   TEXT
+        )''')
+
+    cur.execute ('DROP TABLE IF EXISTS Journals')
+    cur.execute ('''CREATE TABLE Journals (
+        jid     INTEGER PRIMARY KEY AUTOINCREMENT,
+        abbr    TEXT,
+        title   TEXT
+        )''')
+
+    f = open ('top_conf.txt', 'r')
+    for line in f.readlines ():
+        abbr = line.split ('\t')[0].strip ()
+        title = line.split ('\t')[3].strip ()
+        cur.execute ("INSERT INTO Conferences (abbr, title) VALUES(?, ?)", (abbr, title))
+    f.close ()
+
+
+    f = open ('top_journal.txt', 'r')
+    for line in f.readlines ():
+        abbr = line.split ('\t')[0].strip ()
+        title = line.split ('\t')[3].strip ()
+        cur.execute ("INSERT INTO Journals (abbr, title) VALUES(?, ?)", (abbr, title))
+    f.close ()
+
 
     # Add a empty affiliation
     cur.execute ("INSERT INTO Affiliations (title, type) VALUES ('', '')")
@@ -107,13 +140,31 @@ with con:
         cur.execute ("INSERT INTO Papers (title, key, year, url) VALUES(?, ?, ?, ?)", (title, key, year, url))
         pid = cur.lastrowid
 
+        if url.split ('/')[1] == 'conf':
+            pubtype = 1
+            cur.execute ("SELECT * FROM Conferences WHERE abbr = ?", [url.split ('/')[2]])
+            pubid = cur.fetchone ()[0]
+        else:
+            pubtype = 2
+            cur.execute ("SELECT * FROM Journals WHERE abbr = ?", [url.split ('/')[2]])
+            pubid = cur.fetchone ()[0]
+
         rank = 0
+        tot = len (paper.xpath ('rauthor'))
+        total = 0
+        for i in range (1, tot + 1):
+            total = total + 1.0 / i
+
         for author in paper.xpath ('rauthor'):
+            if not author.xpath ('name')[0].text:
+                print 'fuck'
+                continue
             name = fromLatinToUnicode (author.xpath ('name')[0].text)
             affn = fromLatinToUnicode (author.xpath ('affn')[0].text)
 
             aid = getauthorid (name, affn)   
             rank = rank + 1
-            cur.execute ("INSERT INTO Copyrights (pid, aid, rank) VALUES (?, ?, ?)", (pid, aid, rank))
+            cur.execute ("INSERT INTO Copyrights (pid, pubtype, pubid, aid, rank, score) VALUES (?, ?, ?, ?, ?, ?)", \
+                (pid, pubtype, pubid, aid, rank, 1.0 / rank / total))
 
 
