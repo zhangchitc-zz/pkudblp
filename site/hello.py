@@ -65,7 +65,7 @@ def index():
             <input type="button" onClick="SetAllCheckBoxes('list', 'conf', false); SetAllCheckBoxes('list', 'journal', false);" value="Clear All"/>
         
         """
-        ret = ret + """<input type="submit" value="Rank All Affiliations"><br> """
+        ret = ret + '<input type="submit" onclick="document.list.action=\'/rank\'; return true;" value="Rank All Affiliations"><br>'
 
         cur.execute ("SELECT * FROM Affiliations")
         rows = cur.fetchall ()
@@ -76,7 +76,7 @@ def index():
         ret = ret + '</select>'
 
 
-        ret = ret + '<input type="submit" value="See Trend" onclick="list.action=\'/trend\';return true;"><br/>'
+        ret = ret + '<input type="button" value="See Trend" onclick="document.list.action=\'/trend\'; document.list.submit (); return true;"><br/>'
 
         ret = ret + "<select name='sid2'>"
         for row in rows:
@@ -84,7 +84,7 @@ def index():
         ret = ret + '</select>'
 
 
-        ret = ret + '<input type="submit" value="Compare Them" onclick="list.action=\'/compare\';return true;"><br/>'
+        ret = ret + '<input type="button" value="Compare Them" onclick="document.list.action=\'/compare\'; document.list.submit (); return true;"><br/>'
 
         ret = ret + """</form> </body></html>"""
         return ret
