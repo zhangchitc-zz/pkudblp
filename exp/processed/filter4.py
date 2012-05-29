@@ -19,6 +19,7 @@ def normalize (s):
 sch_table = []
 f = open ('top_schools.txt', 'r')
 for line in f.readlines ():
+    line = line.split ('\t')[0]
     p = re.compile (r'(?P<name>.*)\((?P<affn>.*)\)')
     m = p.search (line)
     affn = ''
@@ -47,6 +48,7 @@ for line in f.readlines ():
 
     norm = normalize (name)
     ans = ' '
+
     for a, b in sch_table:
         if norm.find (a) != -1:
             if len (a) < 5:
@@ -55,7 +57,7 @@ for line in f.readlines ():
                     continue
             if ans.startswith ('*') or len (b) > len (ans):
                 ans = b
-
+    
     normal[name] = ans
 
 
@@ -66,6 +68,9 @@ f.close ()
 root = etree.fromstring (xml)
 
 print "<dblp>"
+
+f = open ('tmp.xml', 'w')
+count = 0
 
 for paper in root.xpath ('paper'):
     p = re.compile (r'(?P<name>.*)\((?P<affn>.*)\)')
@@ -84,6 +89,10 @@ for paper in root.xpath ('paper'):
         ename.text = normal[affn].decode ('latin-1')
         rauthor.append (ename)
 
+        if ename.text == ' ':
+            count = count + 1
+            f.write (affn + '\n' + ename.text + '\n')
+
         ename = etree.Element ("rawaffn")
         ename.text = m.group ('affn')
         rauthor.append (ename)
@@ -92,3 +101,5 @@ for paper in root.xpath ('paper'):
     print etree.tostring (paper, pretty_print = True)
 
 print "</dblp>"
+
+f.close ()

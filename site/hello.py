@@ -123,10 +123,9 @@ def index ():
         ret = template ("tpl/rank1")
         
         rows = cur.fetchall ()
-        rank = 0
+        rank = 1
         for row in rows:
-            if rank == 0:
-                rank = rank + 1
+            if row[0] == 1:
                 continue
 
             if rank % 2 == 1:
