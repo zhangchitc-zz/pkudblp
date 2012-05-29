@@ -129,9 +129,9 @@ def index ():
                 continue
 
             if rank % 2 == 1:
-                ret = ret + template ("tpl/rank2", rank=rank, affn=row[1], total="%.2f" % row[4], conf="%.2f" % row[3], journal="%.2f" % row[2])
+                ret = ret + template ("tpl/rank2", rank=rank, affn=row[1], total="%.2f" % row[4], conf="%.2f" % row[2], journal="%.2f" % row[3])
             else:
-                ret = ret + template ("tpl/rank3", rank=rank, affn=row[1], total="%.2f" % row[4], conf="%.2f" % row[3], journal="%.2f" % row[2])
+                ret = ret + template ("tpl/rank3", rank=rank, affn=row[1], total="%.2f" % row[4], conf="%.2f" % row[2], journal="%.2f" % row[3])
  
             rank = rank + 1
 
