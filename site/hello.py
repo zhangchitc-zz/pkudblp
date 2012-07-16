@@ -1,8 +1,6 @@
 from bottle import static_file, post, route, run, template, request
 import sqlite3
 
-con = sqlite3.connect ('pkudblp.db')
-
 @route('/js/:filename')
 def getfile (filename):
     return static_file (filename, root='js')
@@ -18,7 +16,9 @@ def getfile (filename):
 
 @route('/')
 def index():
-    with con:
+   con = sqlite3.connect ('pkudblp.db')
+
+   with con:
         cur = con.cursor ()
 
         htmlrows = {}
@@ -52,7 +52,9 @@ def index():
 
 @post('/select')
 def select ():
-    with con:
+   con = sqlite3.connect ('pkudblp.db')
+
+   with con:
         cur = con.cursor ()
 
         conf = request.forms.getlist ('conf')
@@ -78,6 +80,8 @@ def select ():
 def index ():
     conf = request.forms.getlist ('conf')
     journal = request.forms.getlist ('journal')
+  
+    con = sqlite3.connect ('pkudblp.db')
 
     with con:
         cur = con.cursor ()
@@ -130,9 +134,8 @@ def index ():
     conf = request.forms.getlist ('conf')
     journal = request.forms.getlist ('journal')
     sid = request.forms.get ('sid')
-    print conf
-    print journal
-    print sid
+   
+    con = sqlite3.connect ('pkudblp.db')
 
     with con:
         cur = con.cursor ()
@@ -181,6 +184,8 @@ def index ():
     journal = request.forms.getlist ('journal')
     sid = request.forms.get ('sid')
     sid2 = request.forms.get ('sid2')
+
+    con = sqlite3.connect ('pkudblp.db')
 
     with con:
         cur = con.cursor ()
