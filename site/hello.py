@@ -3,91 +3,76 @@ import sqlite3
 
 con = sqlite3.connect ('pkudblp.db')
 
-@route('/static/:filename')
+@route('/js/:filename')
 def getfile (filename):
-    return static_file (filename, root='static')
+    return static_file (filename, root='js')
+
+@route('/img/:filename')
+def getfile (filename):
+    return static_file (filename, root='img')
+
+@route('/css/:filename')
+def getfile (filename):
+    return static_file (filename, root='css')
+
 
 @route('/')
 def index():
     with con:
         cur = con.cursor ()
-        ret = """
-        <html>
-        <head>
-        <script language="JavaScript">
-        function SetAllCheckBoxes(FormName, FieldName, CheckValue)
-        {
-            if(!document.forms[FormName]) return;
-            var objCheckBoxes = document.forms[FormName].elements[FieldName];
-            if(!objCheckBoxes) return;
-            var countCheckBoxes = objCheckBoxes.length;
-            if(!countCheckBoxes) objCheckBoxes.checked = CheckValue;
-            else
-                 // set the check value for all check boxes
-                 for(var i = 0; i < countCheckBoxes; i++) {
-                    // alert (objCheckBoxes[i].value);
-                    objCheckBoxes[i].checked = CheckValue;
-                 }
-        }
-        </script>
 
-        </head>
-        <body>
-        <form name="list" action="/rank" method="post">
-        <table>
-        """
+        htmlrows = {}
+        for area in range (1, 9):
+            htmlrows[area] = ''
 
         cur.execute ("SELECT * FROM Conferences")
         rows = cur.fetchall ()
 
         for row in rows:
-            ret = ret + "<tr>"
-            ret = ret + """<td> <input type="checkbox" name="conf" value=" """ + str (row[0]) + """ "></td> """
-            ret = ret + "<td> Conference </td>"
-            ret = ret + "<td>" + row[1].upper () + "</td>"
-            ret = ret + "<td>" + row[2] + "</td>"
-            ret = ret + "</tr>"
+            area = row[2]
+            htmlrows[area] = htmlrows[area] + template ('tpl/index3', lowtype = "conf", type='Conference', typecolor='success', name = str (row[2]) + row[1], id= row[0], desc = row[3], capname = row[1].upper ())
  
         cur.execute ("SELECT * FROM Journals")
         rows = cur.fetchall ()
 
         for row in rows:
-            ret = ret + "<tr>"
-            ret = ret + """<td> <input type="checkbox" name="journal" value=" """ + str (row[0]) + """ "></td> """
-            ret = ret + "<td> Journal </td>"
-            ret = ret + "<td>" + row[1].upper () + "</td>"
-            ret = ret + "<td>" + row[2] + "</td>"
-            ret = ret + "</tr>"
-       
-        ret = ret + """</table> 
-            <input type="button" onClick="SetAllCheckBoxes('list', 'conf', true);" value= "Select All Conferences"/> <br/> 
-            <input type="button" onClick="SetAllCheckBoxes('list', 'journal', true)" value="Select All Journals"/> <br/>
-            <input type="button" onClick="SetAllCheckBoxes('list', 'conf', false); SetAllCheckBoxes('list', 'journal', false);" value="Clear All"/>
-        
-        """
-        ret = ret + '<input type="submit" onclick="document.list.action=\'/rank\'; return true;" value="Rank All Affiliations"><br>'
+            area = row[2]
+            htmlrows[area] = htmlrows[area] + template ('tpl/index3', lowtype = "journal", type='Journal', typecolor='error', name = str (row[2]) + row[1], id= row[0], desc = row[3], capname = row[1].upper ())
+ 
+ 
+        tabs = ''
+        for area in range (1, 9):
+            if area == 1:
+                tabs = tabs + template ('tpl/index2', active = "active", area=area, htmlrows = htmlrows[area])
+            else:
+                tabs = tabs + template ('tpl/index2', active = "", area=area, htmlrows = htmlrows[area])
 
-        cur.execute ("SELECT * FROM Affiliations")
+        return template ('tpl/index1', tabs = tabs)
+
+
+@post('/select')
+def select ():
+    with con:
+        cur = con.cursor ()
+
+        conf = request.forms.getlist ('conf')
+        journal = request.forms.getlist ('journal')
+
+        hiddata = ''
+        for c in conf:
+            hiddata = hiddata + '<input type="hidden" name="conf" value="%s">\n' % c
+        for j in journal:
+            hiddata = hiddata + '<input type="hidden" name="journal" value="%s">\n' % j
+
+        cur.execute ("SELECT * FROM Affiliations ORDER BY Title")
         rows = cur.fetchall ()
 
-        ret = ret + "<select name='sid'>"
+        affops = ''
         for row in rows:
-            ret = ret + '<option value="' + str (row[0]) + '">' + row[1] + '</option>'
-        ret = ret + '</select>'
+            affops = affops + '<option value="%d">%s</option>\n' % (row[0], row[1])
 
+        return template ('tpl/select1', hiddata = hiddata, affops = affops)
 
-        ret = ret + '<input type="button" value="See Trend" onclick="document.list.action=\'/trend\'; document.list.submit (); return true;"><br/>'
-
-        ret = ret + "<select name='sid2'>"
-        for row in rows:
-            ret = ret + '<option value="' + str (row[0]) + '">' + row[1] + '</option>'
-        ret = ret + '</select>'
-
-
-        ret = ret + '<input type="button" value="Compare Them" onclick="document.list.action=\'/compare\'; document.list.submit (); return true;"><br/>'
-
-        ret = ret + """</form> </body></html>"""
-        return ret
 
 @post ('/rank')
 def index ():
@@ -145,6 +130,10 @@ def index ():
     conf = request.forms.getlist ('conf')
     journal = request.forms.getlist ('journal')
     sid = request.forms.get ('sid')
+    print conf
+    print journal
+    print sid
+
     with con:
         cur = con.cursor ()
         ret = template ("tpl/trend1")
@@ -274,4 +263,4 @@ def index ():
 
         return ret
 
-run(host='192.168.3.189', port=8888, debug=False)
+run(host='localhost', port=8888, debug=False)

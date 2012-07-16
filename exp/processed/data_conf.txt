@@ -1,0 +1,41 @@
+aaai		8	National Conference on Artificial Intelligence (AAAI)				
+acl		8	Meeting of the Association for Computational Linguistics (ACL)
+asplos		1	International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)
+ccs		3	Conference on Computer and Communications Security (CCS)
+chi		7	Computer Human Interaction (CHI)
+coling		8	International Conference on Computational Linguistics (COLING)
+crypto		3	International Cryptology Conference (CRYPTO)
+cvpr		8	Computer Vision and Pattern Recognition						
+emnlp		8	Empirical Methods in Natural Language Processing
+focs		4	Annual Symposium on Foundations of Computer Science (FOCS)
+hcpa		1	International Symposium on High-Performance Computer Architecture (HPCA)
+iccv		8	IEEE International Conference on Computer Vision (ICCV)				
+icde		6	International Conference on Data Engineering (ICDE)
+icml		6	International Conference on Machine Learning (ICML)			
+icse		5	International Conference on Software Engineering (ICSE)
+ijcai		8	International Joint Conference on Artificial Intelligence (IJCAI)
+infocom		2	IEEE INFOCOM
+isca		1	International Symposium on Computer Architecture (ISCA)
+kbse		5	Automated Software Engineering (ASE)
+kdd		6	Knowledge Discovery and Data Mining (KDD)
+lics		4	Logic in Computer Science (LICS)
+micro		1	International Symposium on Microarchitecture (MICRO)
+mm		7	ACM Multimedia
+mobicom		2	ACM/IEEE International Conference on Mobile Computing and Networking (MOBICOM)
+nips		8	Neural Information Processing Systems (NIPS)
+nsdi		2	Networked Systems Design and Implementation
+oopsla		5	Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)
+osdi		5	Operating Systems Design and Implementation (OSDI)
+pldi		5	SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+pods		6	Symposium on Principles of Database Systems (PODS)
+popl		5	Symposium on Principles of Programming Languages (POPL)
+sigcomm		2	ACM SIGCOMM Conference
+siggraph		7	Annual Conference on Computer Graphics (SIGGRAPH)
+sigir		6	International Conference on Research and Development in Information Retrieval (SIGIR)
+sigmod		6	ACM SIGMOD Conference
+sigsoft		5	Foundations of Software Engineering (SIGSOFT FSE)
+sosp		5	Symposium on Operating Systems Principles (SOSP)
+sp		3	IEEE Symposium on Security and Privacy (S&P)
+stoc		4	Symposium on the Theory of Computing (STOC)
+visualization		7	Visualization
+vldb		6	Very Large Data Bases (VLDB) Conference

@@ -1,0 +1,9 @@
+1 Computer Architecture
+2 Network
+3 Security
+4 Theory
+5 Software Engineering
+6 Data Mining
+7 Multimedia
+8 Artificial Intelligence
+

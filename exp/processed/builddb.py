@@ -80,7 +80,8 @@ with con:
     cur.execute ('DROP TABLE IF EXISTS Conferences')
     cur.execute ('''CREATE TABLE Conferences (
         cid     INTEGER PRIMARY KEY AUTOINCREMENT,
-        abbr    TEXT, 
+        abbr    TEXT,
+        area    INTEGER,
         title   TEXT
         )''')
 
@@ -88,22 +89,27 @@ with con:
     cur.execute ('''CREATE TABLE Journals (
         jid     INTEGER PRIMARY KEY AUTOINCREMENT,
         abbr    TEXT,
+        area    INTEGER,
         title   TEXT
         )''')
 
-    f = open ('top_conf.txt', 'r')
+    f = open ('data_conf.txt', 'r')
     for line in f.readlines ():
         abbr = line.split ('\t')[0].strip ()
+        area = line.split ('\t')[2].strip ()
+        area = int (area)
         title = line.split ('\t')[3].strip ()
-        cur.execute ("INSERT INTO Conferences (abbr, title) VALUES(?, ?)", (abbr, title))
+        cur.execute ("INSERT INTO Conferences (abbr, area, title) VALUES(?, ?, ?)", (abbr, area, title))
     f.close ()
 
 
-    f = open ('top_journal.txt', 'r')
+    f = open ('data_journal.txt', 'r')
     for line in f.readlines ():
         abbr = line.split ('\t')[0].strip ()
+        area = line.split ('\t')[2].strip ()
+        area = int (area)
         title = line.split ('\t')[3].strip ()
-        cur.execute ("INSERT INTO Journals (abbr, title) VALUES(?, ?)", (abbr, title))
+        cur.execute ("INSERT INTO Journals (abbr, area, title) VALUES(?, ?, ?)", (abbr, area, title))
     f.close ()
 
 
@@ -111,7 +117,7 @@ with con:
     cur.execute ("INSERT INTO Affiliations (title, type) VALUES ('', '')")
 
     # Add affliation record
-    f = open ('top_schools.txt', 'r')
+    f = open ('data_affiliations.txt', 'r')
     for line in f.readlines ():
         #line = line.decode ('utf-8')
         name = line.split ('\t')[0].strip ()
@@ -127,7 +133,7 @@ with con:
     
 
     # Add Papers record
-    f = open ('result4.xml', 'r')
+    f = open ('result5.xml', 'r')
     r = etree.fromstring (f.read ())
     for paper in r.xpath ('paper'):
         title = paper.xpath ('title/text()')[0]
