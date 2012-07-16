@@ -12,7 +12,7 @@
             }
 
         </style>
-        <script type="application/javascript" src="/static/awesomechart.js"> </script>
+        <script type="application/javascript" src="js/awesomechart.js"> </script>
     </head>
     <body>
 

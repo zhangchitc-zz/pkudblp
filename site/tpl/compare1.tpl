@@ -1,8 +1,8 @@
 <html>
 <head>
-<script src="/static/jquery-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/static/raphael-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/static/elycharts-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/elycharts-min.js" type="text/javascript" charset="utf-8"></script>
 
 
 <script  type="text/javascript">
